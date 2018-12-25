@@ -31,3 +31,5 @@ To remove the sensor send an empty payload to the same config topic
 # More resources
 
 - MQTT Test client: http://workswithweb.com/mqttbox.html
+- OSS MQTT for IOT: https://github.com/1technophile/OpenMQTTGateway
+- Another RPI MQTT project: https://github.com/Shmoopty/rpi-appliance-monitor
