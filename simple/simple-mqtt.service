@@ -2,14 +2,13 @@
 Description=Simple MQTT Service
 After=network.target
 
-
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/home/gbray/code/github/hass-mqtt/simple
-EnvironmentFile=/home/gbray/code/github/hass-mqtt/simple-mqtt.env
-ExecStart=pipenv run ./simple.py
+WorkingDirectory=%h/code/github/hass-mqtt/simple
+#EnvironmentFile=%h/code/github/hass-mqtt/simple/simple-mqtt.env #use .env file loaded by pipenv instead
+ExecStart=/usr/local/bin/pipenv run ./simple.py
 Restart=on-abort
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
