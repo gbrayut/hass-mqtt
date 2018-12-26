@@ -4,9 +4,10 @@ name = "pypi"
 verify_ssl = true
 
 [dev-packages]
+pylint = "==2.2"
 
 [requires]
 python_version = "3.5"
 
 [packages]
-paho-mqtt = "*"
+paho-mqtt = "==1.4"
