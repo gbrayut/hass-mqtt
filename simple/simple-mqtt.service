@@ -4,7 +4,6 @@ After=network.target
 
 [Service]
 Type=simple
-User=root
 WorkingDirectory=%h/code/github/hass-mqtt/simple
 #EnvironmentFile=%h/code/github/hass-mqtt/simple/simple-mqtt.env #use .env file loaded by pipenv instead
 ExecStart=/usr/local/bin/pipenv run ./simple.py
