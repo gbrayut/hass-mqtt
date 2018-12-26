@@ -57,7 +57,7 @@ mqttclient.connect(mqttserver, 4883, 60)
 
 
 #mqttclient.loop_start()
-mqttclient.publish("topic/test", "Hello world!")
+mqttclient.publish("topic/test", "Hello from "+clientid)
 
 rc = 0
 while rc == 0:
